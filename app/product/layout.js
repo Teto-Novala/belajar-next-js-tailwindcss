@@ -15,7 +15,7 @@ export default async function Layout({ children }) {
       <h1>Product Page</h1>
       {products.map((product) => {
         return (
-          <div className="border-8 my-2 px-2">
+          <div className="border-8 my-2 px-2" key={product.id}>
             <Link href={`/product/${product.id}`}>
               No.{product.id} {product.title}
             </Link>

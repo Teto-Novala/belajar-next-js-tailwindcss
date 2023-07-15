@@ -10,7 +10,7 @@ export default async function ProductID({ params }) {
   console.log(data);
   return (
     <div>
-      <Image src={data.thumbnail} width={200} height={200} />
+      <Image src={data.thumbnail} width={200} height={200} alt={data.title} />
       <h1>{data.title}</h1>
       <p>brand: {data.brand}</p>
       <p>rating: {data.rating}</p>
